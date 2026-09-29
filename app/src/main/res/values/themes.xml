@@ -1,0 +1,9 @@
+<resources>
+    <!-- Full-screen theme: no title, no app bar, no status/navigation bar -->
+    <style name="Theme.CannonGame" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>

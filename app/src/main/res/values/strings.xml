@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Cannon Game</string>
+
+    <!-- Game over dialog -->
+    <string name="results_format">Shots fired: %1$d\nTotal time: %2$.1f seconds</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+
+    <!-- HUD -->
+    <string name="time_remaining_format">Time remaining: %.1f seconds</string>
+    <string name="score_format">Score: %1$d (x%2$d)</string>
+    <string name="final_score_format">Final score: %1$d</string>
+    <string name="level_format">Level %1$d</string>
+</resources>

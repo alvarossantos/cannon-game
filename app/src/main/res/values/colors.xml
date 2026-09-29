@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- alternating Target colors -->
+    <color name="dark">#1976D2</color>
+    <color name="light">#FFE100</color>
+</resources>
