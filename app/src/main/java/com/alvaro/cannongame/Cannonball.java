@@ -54,10 +54,13 @@ public class Cannonball extends GameElement {
         // update horizontal position
         shape.offset((int) (velocityX * interval), 0);
 
-        // if Cannonball goes off the screen
-        if (shape.top < 0 || shape.left < 0 ||
-           shape.bottom > view.getScreenHeight() ||
-           shape.right > view.getScreenWidth())
+        // if Cannonball goes off the screen: only remove it after it has
+        // completely left the display, otherwise it would be discarded on the
+        // first frame, right after being spawned at x = -radius (visible on
+        // high refresh rate displays, where the per-frame displacement is
+        // smaller than the Cannonball's radius)
+        if (shape.right < 0 || shape.left > view.getScreenWidth() ||
+           shape.bottom < 0 || shape.top > view.getScreenHeight())
            onScreen = false; // set it to be removed
     }
 
